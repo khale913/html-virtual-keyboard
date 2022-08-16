@@ -28,9 +28,9 @@ Function virtualKeyboard_Initialize(msgPort As Object, userVariables As Object, 
 		rectangle = createObject("rorectangle", 0, 0, width, height)
         virtualKeyboard = createObject("roVirtualKeyboard", rectangle)
         if m.bsp.sign.monitorOrientation = "portrait" then
-		  virtualKeyboard.setTransform("rot90")
+		  virtualKeyboard.setTransform("rot180")
 		else if m.bsp.sign.monitorOrientation = "portraitbottomonright" then
-		  virtualKeyboard.setTransform("rot270")
+		  virtualKeyboard.setTransform("rot90")
 		endif
 		virtualKeyboard.setResource("file:///virtualKeyboard/bsvirtualkb.html")
         virtualKeyboard.setPort(m.msgPort)

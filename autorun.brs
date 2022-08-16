@@ -2,15 +2,15 @@ r1=createobject("rorectangle",0,0,1920,1080)
 h1=createobject("rohtmlwidget",r1)
 h1.seturl("http://www.google.co.uk")
 ' Uncomment the following for portrait mode
-'h1.settransform("rot90")
+h1.settransform("rot90")
 h1.StartInspectorServer(2999)
 h1.show()
 
 ' Comment the following for portrait mode
-rv=createobject("rorectangle", 0,0,1920,1080)
-v=createobject("rovirtualkeyboard",rv)
+' rv=createobject("rorectangle", 0,0,1920,1080)
+' v=createobject("rovirtualkeyboard",rv)
 ' Uncomment the following for portrait mode
-'v.settransform("rot90")
+v.settransform("rot90")
 v.setresource("file:///bsvirtualkb.html")
 
 t=createobject("rotouchscreen")

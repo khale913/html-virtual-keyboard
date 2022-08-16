@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="keyboard.css">
     <!-- endbuild -->
 </head>
-<body ng-app="bsApp" ng-controller="bsController" style="background-color: rgba(0,0,0,0)">
+
+<body ng-app="bsApp" ng-controller="bsController" style="background-color: rgba(228, 15, 15, 0)">
 <div id="empty_background" ng-click="clickMe('cancel')"></div>
     <div class="ui-keyboard ui-keyboard-container center-block dropdown-menu ui-keyboard-has-focus" role="textbox"
          id="keyboard_keyboard">
@@ -25,9 +26,6 @@
                             {{lang}}
                             <span class="caret"></span>
                         </button>
-                        <ul class="dropdown-menu language-menu" aria-labelledby="languageDropdownMenu" ng-style="keyboardSize">
-                            <li ng-repeat="lang in langs" ng-click="setLang(lang)">{{lang}}</li>
-                        </ul>
                     </span>
                 </span>
             <br class="ui-keyboard-button-endrow">
@@ -46,4 +44,5 @@
 <script src="controllers.ts"></script>
 <!-- endbuild -->
 </body>
+<input type="text">
 </html>

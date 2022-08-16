@@ -8,6 +8,11 @@
     z-index: 16000;
 }
 
+body {
+    -webkit-transform: rotateX(90deg);
+        transform: rotateX(180deg);
+}
+
 .ui-keyboard-has-focus {
     z-index: 16001;
 }
